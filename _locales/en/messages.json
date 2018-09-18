@@ -1,0 +1,32 @@
+{
+  "appstore": {
+    "message": "Appstore"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "bug": {
+    "message": "Report Bug"
+  },
+  "suggestion": {
+    "message": "Suggestion"
+  },
+  "apps_lssm_name": {
+    "message": "LSSM"
+  },
+  "apps_lssm_description": {
+    "message": "-"
+  },
+  "apps_clock_name": {
+    "message": "Clock"
+  },
+  "apps_clock_description": {
+    "message": "Enables a small clock within the map."
+  },
+  "apps_creditserweiterung_name": {
+    "message": "Credit expansion"
+  },
+  "apps_creditserweiterung_description": {
+    "message": "Adds some special information about the credits in a drop-down list"
+  }
+}

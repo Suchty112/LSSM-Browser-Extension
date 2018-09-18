@@ -1,0 +1,32 @@
+{
+  "appstore": {
+    "message": "Appstore"
+  },
+  "settings": {
+    "message": "Instellingen"
+  },
+  "bug": {
+    "message": "Meldingsfoutje"
+  },
+  "suggestion": {
+    "message": "Suggestie"
+  },
+  "apps_lssm_name": {
+    "message": "LSSM"
+  },
+  "apps_lssm_description": {
+    "message": "-"
+  },
+  "apps_clock_name": {
+    "message": "Klok"
+  },
+  "apps_clock_description": {
+    "message": "Activeert een kleine klok in de kaart."
+  },
+  "apps_creditserweiterung_name": {
+    "message": "Kredietuitbreiding"
+  },
+  "apps_creditserweiterung_description": {
+    "message": "Voegt wat speciale informatie over de credits toe in een vervolgkeuzelijst"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "name": "LSS-Manager V.4",
+  "default_locale": "de",
+  "description": "Der LSS-Manager als Browsererweiterung",
+  "version": "0.1",
+  "page_action": {
+    "default_icon": "./img/128.png",
+    "default_title": "LSS-Manager V.4"
+  },
+  "background": {
+    "scripts": [
+      "./js/background.js"
+    ],
+    "persistent": false
+  },
+  "permissions" : [
+    "declarativeContent",
+    "storage",
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "https://www.leitstellenspiel.de/*",
+    "https://www.missionchief.com/*",
+    "https://www.meldkamerspel.com/*"
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://www.leitstellenspiel.de/*",
+      "https://www.missionchief.com/*",
+      "https://www.meldkamerspel.com/*"
+    ]
+  },
+  "icons" : {
+    "128" : "./img/128.png"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "id": "lssm",
+      "name": "apps_lssm_name",
+      "description": "apps_lssm_description",
+      "develop": false,
+      "noapp": true,
+      "active": true,
+      "all_frames": true,
+      "js": [
+        "modules/lssm.js"
+      ],
+      "matches": [
+        "https://www.leitstellenspiel.de/*",
+        "https://www.missionchief.com/*",
+        "https://www.meldkamerspel.com/*"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "id": "clock",
+      "name": "apps_clock_name",
+      "description": "apps_clock_description",
+      "develop": false,
+      "noapp": false,
+      "active": false,
+      "all_frames": true,
+      "js": [
+        "modules/clock.js"
+      ],
+      "matches": [
+        "https://www.leitstellenspiel.de/",
+        "https://www.missionchief.com/",
+        "https://www.meldkamerspel.com/"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "id": "creditserweiterung",
+      "name": "apps_creditserweiterung_name",
+      "description": "apps_creditserweiterung_description",
+      "develop": true,
+      "noapp": true,
+      "active": true,
+      "all_frames": true,
+      "js": [
+        "modules/creditserweiterung.js"
+      ],
+      "matches": [
+        "https://www.leitstellenspiel.de/",
+        "https://www.missionchief.com/",
+        "https://www.meldkamerspel.com/"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
