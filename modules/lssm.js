@@ -26,6 +26,9 @@ let sync = function() {
         chrome.runtime.sendMessage(lssmAppId, vars);
 
     }
+
+    // Ohne diese Funktion würde die News nicht als "gelesen" markiert werden, kein Plan, warums ohne net geht.
+    $("#news").click(function(){return newsNew(!1),$.ajax({url:"/news/gelesen",cache:!1}),mobile_bridge_use&&"de"!==I18n.locale?(lightboxOpen($(this).attr("href")),!1):void 0});
 };
 
 let script = document.createElement('script');
